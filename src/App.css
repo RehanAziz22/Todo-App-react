@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Beautiful-Stars-Landscape-Background-Image-.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.sectionOne {
+  min-height: 90vh;
+  width: 50%;
+  /* background-color: chartreuse; */
+  margin-top: 40px;
+  justify-content: center;
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+
+.container-One {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 40px;
+  margin: auto;
+}
+
+.container-One input {
+  width: 65%;
+  /* height: 30px; */
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-family:  'Arial Narrow', Arial, sans-serif;
+}
+
+.display-con {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.display-con li {
+  width: 55%;
+  padding: 3px 10px;
+}
+
+.todoList {
+  list-style: none;
+  margin: 25px auto;
+  width: 90%;
+  /* border: 1px solid white; */
+  text-align: left;
+  min-height: 0px;
+  max-height: 330px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-left: 0%;
+}
+
+.todoList::-webkit-scrollbar {
+  display: none;
+}
+
+.listItems {
+  /* border: 1px solid white; */
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+.btn {
+  background-color: #61dafb;
+  color: black;
+  /* height: auto; */
+  font-size: 20px;
+  width: 20%;
+  padding: 5px;
+  border-radius: 20px;
+}
+.btn:hover{
+  background-color: red;
+  cursor: pointer;
+  
+}
+.add{
+  width: 30%;
+}
+.del , .edit{
+  height: 37px;
+}
+.delAll {
+  width: auto;
+  padding: 0px 10px;
+  height: 40px;
+}
+
+@media only screen and (max-width:750px) {
+  .sectionOne {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .sectionOne {
+    width: 90%;
+  }
+
+  .todoList .btn {
+    height: 37px;
+    width: auto;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
